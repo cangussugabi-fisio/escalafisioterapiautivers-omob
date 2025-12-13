@@ -6,8 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 
   <style>
+    /* ============================================================
+       🎨 CORES (PALETA) — edite aqui se quiser mudar o visual
+       ============================================================ */
     :root {
-      
+      /* 👇 AQUI VOCE MUDA A COR DA PLANILHA */
       --azul-bebe: #e3f2fd;
       --azul-marinho: #0d47a1;
       --verde-escuro: #1b5e20;
@@ -16,9 +19,7 @@
       --texto-principal: #1f2933;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     html, body {
       margin: 0;
@@ -48,21 +49,13 @@
     }
 
     @media (min-width: 480px) {
-      body {
-        padding: 14px 10px;
-      }
-      .app-container {
-        padding: 18px 16px 20px;
-      }
+      body { padding: 14px 10px; }
+      .app-container { padding: 18px 16px 20px; }
     }
 
     @media (min-width: 768px) {
-      body {
-        padding: 16px;
-      }
-      .app-container {
-        padding: 24px 26px 26px;
-      }
+      body { padding: 16px; }
+      .app-container { padding: 24px 26px 26px; }
     }
 
     .header {
@@ -91,17 +84,8 @@
       line-height: 1.2;
     }
 
-    @media (min-width: 480px) {
-      .title {
-        font-size: 1.1rem;
-      }
-    }
-
-    @media (min-width: 768px) {
-      .title {
-        font-size: 1.25rem;
-      }
-    }
+    @media (min-width: 480px) { .title { font-size: 1.1rem; } }
+    @media (min-width: 768px) { .title { font-size: 1.25rem; } }
 
     .credit {
       font-size: 0.7rem;
@@ -109,12 +93,7 @@
       font-weight: 500;
       white-space: nowrap;
     }
-
-    @media (min-width: 480px) {
-      .credit {
-        font-size: 0.73rem;
-      }
-    }
+    @media (min-width: 480px) { .credit { font-size: 0.73rem; } }
 
     .subtitle {
       font-size: 0.78rem;
@@ -122,18 +101,8 @@
       max-width: 100%;
       line-height: 1.3;
     }
-
-    @media (min-width: 480px) {
-      .subtitle {
-        font-size: 0.8rem;
-      }
-    }
-
-    @media (min-width: 768px) {
-      .subtitle {
-        font-size: 0.83rem;
-      }
-    }
+    @media (min-width: 480px) { .subtitle { font-size: 0.8rem; } }
+    @media (min-width: 768px) { .subtitle { font-size: 0.83rem; } }
 
     .subtitle span {
       font-weight: 600;
@@ -153,17 +122,10 @@
     }
 
     @media (min-width: 480px) {
-      .controls {
-        gap: 10px;
-        padding: 10px 10px 12px;
-      }
+      .controls { gap: 10px; padding: 10px 10px 12px; }
     }
-
     @media (min-width: 768px) {
-      .controls {
-        gap: 12px;
-        padding: 12px 14px;
-      }
+      .controls { gap: 12px; padding: 12px 14px; }
     }
 
     .control-group {
@@ -180,18 +142,8 @@
       text-transform: uppercase;
       letter-spacing: 0.04em;
     }
-
-    @media (min-width: 480px) {
-      .control-label {
-        font-size: 0.73rem;
-      }
-    }
-
-    @media (min-width: 768px) {
-      .control-label {
-        font-size: 0.75rem;
-      }
-    }
+    @media (min-width: 480px) { .control-label { font-size: 0.73rem; } }
+    @media (min-width: 768px) { .control-label { font-size: 0.75rem; } }
 
     select,
     input[type="number"] {
@@ -204,13 +156,8 @@
       min-height: 30px;
       font-family: inherit;
     }
-
     @media (min-width: 768px) {
-      select,
-      input[type="number"] {
-        font-size: 0.85rem;
-        min-height: 32px;
-      }
+      select, input[type="number"] { font-size: 0.85rem; min-height: 32px; }
     }
 
     select:focus,
@@ -241,41 +188,14 @@
       white-space: nowrap;
     }
 
-    @media (min-width: 480px) {
-      .btn-primary {
-        font-size: 0.85rem;
-        padding: 8px 18px;
-        gap: 6px;
-      }
-    }
+    @media (min-width: 480px) { .btn-primary { font-size: 0.85rem; padding: 8px 18px; gap: 6px; } }
+    @media (min-width: 768px) { .btn-primary { font-size: 0.88rem; padding: 8px 18px; } }
 
-    @media (min-width: 768px) {
-      .btn-primary {
-        font-size: 0.88rem;
-        padding: 8px 18px;
-      }
-    }
+    .btn-primary:hover { filter: brightness(1.05); transform: translateY(-0.5px); }
+    .btn-primary:active { filter: brightness(0.98); transform: translateY(0.5px); box-shadow: 0 2px 6px rgba(13, 71, 161, 0.25); }
 
-    .btn-primary:hover {
-      filter: brightness(1.05);
-      transform: translateY(-0.5px);
-    }
-
-    .btn-primary:active {
-      filter: brightness(0.98);
-      transform: translateY(0.5px);
-      box-shadow: 0 2px 6px rgba(13, 71, 161, 0.25);
-    }
-
-    .btn-primary span.icon {
-      font-size: 0.95rem;
-    }
-
-    @media (min-width: 768px) {
-      .btn-primary span.icon {
-        font-size: 1rem;
-      }
-    }
+    .btn-primary span.icon { font-size: 0.95rem; }
+    @media (min-width: 768px) { .btn-primary span.icon { font-size: 1rem; } }
 
     .btn-secondary {
       appearance: none;
@@ -298,40 +218,14 @@
       white-space: nowrap;
     }
 
-    @media (min-width: 480px) {
-      .btn-secondary {
-        font-size: 0.85rem;
-        padding: 8px 16px;
-        gap: 6px;
-      }
-    }
+    @media (min-width: 480px) { .btn-secondary { font-size: 0.85rem; padding: 8px 16px; gap: 6px; } }
+    @media (min-width: 768px) { .btn-secondary { font-size: 0.88rem; } }
 
-    @media (min-width: 768px) {
-      .btn-secondary {
-        font-size: 0.88rem;
-      }
-    }
+    .btn-secondary:hover { background: var(--azul-bebe); border-color: var(--azul-marinho); transform: translateY(-0.5px); }
+    .btn-secondary:active { transform: translateY(0.5px); box-shadow: 0 1px 3px rgba(13, 71, 161, 0.12); }
 
-    .btn-secondary:hover {
-      background: var(--azul-bebe);
-      border-color: var(--azul-marinho);
-      transform: translateY(-0.5px);
-    }
-
-    .btn-secondary:active {
-      transform: translateY(0.5px);
-      box-shadow: 0 1px 3px rgba(13, 71, 161, 0.12);
-    }
-
-    .btn-secondary span.icon {
-      font-size: 0.95rem;
-    }
-
-    @media (min-width: 768px) {
-      .btn-secondary span.icon {
-        font-size: 1rem;
-      }
-    }
+    .btn-secondary span.icon { font-size: 0.95rem; }
+    @media (min-width: 768px) { .btn-secondary span.icon { font-size: 1rem; } }
 
     .action-buttons {
       display: flex;
@@ -343,21 +237,8 @@
       justify-content: flex-start;
     }
 
-    @media (min-width: 480px) {
-      .action-buttons {
-        gap: 8px;
-        margin-top: 12px;
-        padding-top: 12px;
-      }
-    }
-
-    @media (min-width: 768px) {
-      .action-buttons {
-        gap: 8px;
-        margin-top: 12px;
-        padding-top: 12px;
-      }
-    }
+    @media (min-width: 480px) { .action-buttons { gap: 8px; margin-top: 12px; padding-top: 12px; } }
+    @media (min-width: 768px) { .action-buttons { gap: 8px; margin-top: 12px; padding-top: 12px; } }
 
     .info-bar {
       font-size: 0.75rem;
@@ -370,19 +251,11 @@
     }
 
     @media (min-width: 480px) {
-      .info-bar {
-        font-size: 0.77rem;
-        flex-direction: row;
-        gap: 8px;
-      }
+      .info-bar { font-size: 0.77rem; flex-direction: row; gap: 8px; }
     }
 
     @media (min-width: 768px) {
-      .info-bar {
-        font-size: 0.78rem;
-        justify-content: space-between;
-        gap: 10px;
-      }
+      .info-bar { font-size: 0.78rem; justify-content: space-between; gap: 10px; }
     }
 
     .info-highlight {
@@ -398,12 +271,7 @@
       background: linear-gradient(to bottom, #ffffff, #fafafa);
       -webkit-overflow-scrolling: touch;
     }
-
-    @media (min-width: 768px) {
-      .table-wrapper {
-        border-radius: 14px;
-      }
-    }
+    @media (min-width: 768px) { .table-wrapper { border-radius: 14px; } }
 
     table {
       border-collapse: collapse;
@@ -413,19 +281,8 @@
       font-size: 0.75rem;
     }
 
-    @media (min-width: 480px) {
-      table {
-        font-size: 0.78rem;
-        min-width: 520px;
-      }
-    }
-
-    @media (min-width: 768px) {
-      table {
-        font-size: 0.82rem;
-        min-width: 540px;
-      }
-    }
+    @media (min-width: 480px) { table { font-size: 0.78rem; min-width: 520px; } }
+    @media (min-width: 768px) { table { font-size: 0.82rem; min-width: 540px; } }
 
     thead {
       background: linear-gradient(90deg, var(--azul-marinho), #1565c0);
@@ -444,82 +301,31 @@
       font-size: 0.7rem;
     }
 
-    @media (min-width: 480px) {
-      thead th {
-        padding: 7px 5px;
-        font-size: 0.73rem;
-      }
-    }
+    @media (min-width: 480px) { thead th { padding: 7px 5px; font-size: 0.73rem; } }
+    @media (min-width: 768px) { thead th { padding: 8px 6px; font-size: 0.75rem; } }
 
-    @media (min-width: 768px) {
-      thead th {
-        padding: 8px 6px;
-        font-size: 0.75rem;
-      }
-    }
+    thead th:nth-child(1) { width: 80px; }
+    @media (min-width: 480px) { thead th:nth-child(1) { width: 90px; } }
+    @media (min-width: 768px) { thead th:nth-child(1) { width: 96px; } }
 
-    thead th:nth-child(1) {
-      width: 80px;
-    }
-
-    @media (min-width: 480px) {
-      thead th:nth-child(1) {
-        width: 90px;
-      }
-    }
-
-    @media (min-width: 768px) {
-      thead th:nth-child(1) {
-        width: 96px;
-      }
-    }
-
-    thead th:nth-child(2) {
-      width: 120px;
-    }
-
-    @media (min-width: 480px) {
-      thead th:nth-child(2) {
-        width: 130px;
-      }
-    }
-
-    @media (min-width: 768px) {
-      thead th:nth-child(2) {
-        width: 140px;
-      }
-    }
+    thead th:nth-child(2) { width: 120px; }
+    @media (min-width: 480px) { thead th:nth-child(2) { width: 130px; } }
+    @media (min-width: 768px) { thead th:nth-child(2) { width: 140px; } }
 
     thead th:nth-child(3),
-    thead th:nth-child(4) {
-      width: 120px;
-    }
-
+    thead th:nth-child(4) { width: 120px; }
     @media (min-width: 480px) {
       thead th:nth-child(3),
-      thead th:nth-child(4) {
-        width: 130px;
-      }
+      thead th:nth-child(4) { width: 130px; }
     }
-
     @media (min-width: 768px) {
       thead th:nth-child(3),
-      thead th:nth-child(4) {
-        width: 140px;
-      }
+      thead th:nth-child(4) { width: 140px; }
     }
 
-    tbody tr {
-      border-bottom: 1px solid rgba(0, 0, 0, 0.035);
-    }
-
-    tbody tr:nth-child(even) {
-      background: rgba(227, 242, 253, 0.4);
-    }
-
-    tbody tr.weekend-row {
-      background: rgba(200, 230, 201, 0.25);
-    }
+    tbody tr { border-bottom: 1px solid rgba(0, 0, 0, 0.035); }
+    tbody tr:nth-child(even) { background: rgba(227, 242, 253, 0.4); }
+    tbody tr.weekend-row { background: rgba(200, 230, 201, 0.25); }
 
     td {
       padding: 5px 4px;
@@ -530,36 +336,10 @@
       font-size: 0.73rem;
     }
 
-    @media (min-width: 480px) {
-      td {
-        padding: 6px 4px;
-        font-size: 0.76rem;
-      }
-    }
+    @media (min-width: 480px) { td { padding: 6px 4px; font-size: 0.76rem; } }
+    @media (min-width: 768px) { td { padding: 7px 6px; font-size: 0.82rem; } }
 
-    @media (min-width: 768px) {
-      td {
-        padding: 7px 6px;
-        font-size: 0.82rem;
-      }
-    }
-
-    td small {
-      font-size: 0.65rem;
-      color: rgba(55, 65, 81, 0.85);
-      text-transform: lowercase;
-    }
-
-    @media (min-width: 768px) {
-      td small {
-        font-size: 0.7rem;
-      }
-    }
-
-    .day-name {
-      text-transform: capitalize;
-      font-weight: 500;
-    }
+    .day-name { text-transform: capitalize; font-weight: 500; }
 
     .badge {
       display: inline-block;
@@ -576,21 +356,8 @@
       font-weight: 600;
     }
 
-    @media (min-width: 480px) {
-      .badge {
-        padding: 2px 5px;
-        font-size: 0.62rem;
-        margin-left: 3px;
-      }
-    }
-
-    @media (min-width: 768px) {
-      .badge {
-        padding: 2px 6px;
-        font-size: 0.65rem;
-        margin-left: 4px;
-      }
-    }
+    @media (min-width: 480px) { .badge { padding: 2px 5px; font-size: 0.62rem; } }
+    @media (min-width: 768px) { .badge { padding: 2px 6px; font-size: 0.65rem; margin-left: 4px; } }
 
     .footer-note {
       margin-top: 8px;
@@ -602,166 +369,134 @@
       flex-wrap: wrap;
     }
 
-    @media (min-width: 480px) {
-      .footer-note {
-        margin-top: 9px;
-        font-size: 0.72rem;
-        gap: 5px;
-      }
-    }
-
+    @media (min-width: 480px) { .footer-note { margin-top: 9px; font-size: 0.72rem; gap: 5px; } }
     @media (min-width: 768px) {
-      .footer-note {
-        margin-top: 10px;
-        font-size: 0.72rem;
-        justify-content: space-between;
-        flex-direction: row;
-        gap: 10px;
-      }
+      .footer-note { margin-top: 10px; font-size: 0.72rem; justify-content: space-between; flex-direction: row; gap: 10px; }
     }
 
-    .footer-note strong {
-      color: var(--azul-marinho);
-    }
+    .footer-note strong { color: var(--azul-marinho); }
 
-    /* ===== ESTILOS PARA IMPRESSÃO ===== */
+    /* ============================================================
+       🖨️ IMPRESSÃO  ✅ (AJUSTADO PARA 1 FOLHA)
+       ============================================================ */
     @media print {
-      * {
-        margin: 0;
-        padding: 0;
+
+      /* 👇 AQUI VOCÊ FORÇA O PAPEL E ORIENTAÇÃO */
+      @page {
+        size: A4 landscape;  /* 👈 MUDE PARA 'A4 portrait' se quiser */
+        margin: 4mm;         /* 👈 menor margem = mais chance de 1 folha */
       }
+
+      * { margin: 0 !important; padding: 0 !important; }
 
       html, body {
         width: 100%;
         height: auto;
-        margin: 0;
-        padding: 0;
+        background: #fff !important;
       }
 
       body {
-        background: #ffffff;
-        padding: 0;
-        margin: 0;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
       }
 
+      /* 👇 REMOVE “respiros” e espaço extra */
       .app-container {
-        max-width: 100%;
-        box-shadow: none;
-        border-radius: 0;
-        padding: 8mm 10mm;
-        margin: 0;
-        page-break-after: avoid;
+        max-width: 100% !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        padding: 0 !important;        /* 👈 CHAVE */
+        margin: 0 !important;
+      }
 
-        /*  👇 aqui eu acabei de mexer */
-   }  .controls,
-  .action-buttons,
-  .footer-note {
-    display: none !important;
-  }  /* 👈 AGORA A info-bar NÃO SERÁ ESCONDIDA NA IMPRESSÃO */
+      /* 👇 some o que não precisa na impressão */
+      .controls,
+      .action-buttons,
+      .footer-note {
+        display: none !important;
+      }
 
+      /* 👇 mantém header mas compacta MUITO */
       .header {
-        margin-bottom: 6mm;
-        padding-bottom: 4mm;
-        border-bottom: 2px solid var(--azul-marinho);
-        page-break-after: avoid;
+        margin: 0 0 2mm 0 !important;        /* 👈 menor */
+        padding: 0 0 2mm 0 !important;       /* 👈 menor */
+        border-bottom: 1px solid #0d47a1 !important;
       }
 
-      .header-top-row {
-        flex-direction: column;
-        gap: 2mm;
+      .title { font-size: 10pt !important; }
+      .subtitle { font-size: 7pt !important; margin: 0 !important; }
+      .credit { display: none !important; }
+
+      /* 👇 info-bar fica, mas super compacta */
+      .info-bar {
+        font-size: 6.5pt !important;
+        line-height: 1.05 !important;
+        margin: 0 0 2mm 0 !important;
+        gap: 1mm !important;
       }
 
-      .title {
-        font-size: 13pt;
-        margin-bottom: 1mm;
-        page-break-after: avoid;
-      }
-
-      .subtitle {
-        font-size: 8.5pt;
-        margin-bottom: 2mm;
-        page-break-after: avoid;
-      }
-
-      .credit {
-        display: none;
-      }
-
+      /* 👇 tira borda “grossa” pra economizar altura */
       .table-wrapper {
-        border: 1px solid #000;
-        overflow: visible;
-        page-break-inside: avoid;
+        border: 1px solid #000 !important;
+        border-radius: 0 !important;
+        overflow: visible !important;
       }
 
+      /* =========================================================
+         👇 TABELA: COMPACTAÇÃO FORTE (CABER EM 1 FOLHA)
+         ========================================================= */
       table {
-        font-size: 8pt;
-        min-width: 100%;
-        page-break-inside: avoid;
+        width: 100% !important;
+        min-width: 100% !important;
+        table-layout: fixed !important;
+        border-collapse: collapse !important;
+
+        font-size: 6.5pt !important;     /* 👈 menor fonte */
+        line-height: 1.03 !important;    /* 👈 mais “apertado” */
       }
 
       thead {
-        background: var(--azul-marinho) !important;
-        color: #ffffff !important;
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
-        page-break-after: avoid;
+        background: #0d47a1 !important;
+        color: #fff !important;
       }
 
       thead th {
-        padding: 4mm 3mm;
-        border: 1px solid #000;
-        font-size: 7.5pt;
-        font-weight: 700;
-        page-break-after: avoid;
-      }
-
-      tbody tr {
-        border: 1px solid #ccc;
-        page-break-inside: avoid;
-      }
-
-      tbody tr.weekend-row {
-        background: #e8f5e9 !important;
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
-      }
-
-      tbody tr:nth-child(even) {
-        background: #f5f5f5 !important;
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
+        padding: 1.2mm 1.2mm !important; /* 👈 menor padding */
+        border: 1px solid #000 !important;
+        font-size: 6.5pt !important;
+        font-weight: 700 !important;
+        white-space: nowrap !important;
       }
 
       td {
-        padding: 3mm 2.5mm;
-        border: 1px solid #ccc;
-        font-size: 7.5pt;
-        page-break-inside: avoid;
-      }
-
-      .day-name {
-        font-weight: 600;
+        padding: 1.1mm 1.2mm !important;  /* 👈 ESSENCIAL */
+        border: 1px solid #ccc !important;
+        font-size: 6.5pt !important;
+        vertical-align: top !important;
       }
 
       .badge {
-        font-size: 6pt;
-        padding: 0.5mm 2mm;
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
+        font-size: 5.6pt !important;
+        padding: 0.4mm 1mm !important;
       }
 
-      /* Garante que a tabela não quebre entre páginas */
-      table {
-        orphans: 5;
-        widows: 5;
+      /* =========================================================
+         👇 ANTI-QUEBRA (não deixa dividir a tabela em 2 páginas)
+         ========================================================= */
+      tr, td, th, thead, tbody {
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
       }
+
+      thead { display: table-header-group; }
+      tfoot { display: table-footer-group; }
     }
 
-    /* ===== RESPONSIVIDADE MOBILE APRIMORADA ===== */
+    /* ============================================================
+       📱 MOBILE (≤479px)
+       ============================================================ */
     @media (max-width: 479px) {
-      body {
-        padding: 10px 6px;
-      }
+      body { padding: 10px 6px; }
 
       .app-container {
         padding: 12px 10px 14px;
@@ -786,14 +521,8 @@
         padding: 8px;
       }
 
-      .control-group {
-        width: 100%;
-      }
-
-      select,
-      input[type="number"] {
-        width: 100%;
-      }
+      .control-group { width: 100%; }
+      select, input[type="number"] { width: 100%; }
 
       .btn-primary {
         width: 100%;
@@ -811,10 +540,7 @@
         justify-content: center;
       }
 
-      .info-bar {
-        font-size: 0.73rem;
-        gap: 4px;
-      }
+      .info-bar { font-size: 0.73rem; gap: 4px; }
 
       .table-wrapper {
         margin: 0 -10px;
@@ -823,14 +549,14 @@
         border-right: none;
       }
 
-      table {
-        min-width: 100%;
-      }
+      table { min-width: 100%; }
     }
   </style>
 </head>
+
 <body>
   <div class="app-container">
+
     <header class="header">
       <div class="header-top-row">
         <div class="title">Escala da Fisioterapia - UTI Adulto</div>
@@ -880,9 +606,21 @@
 
     <div class="info-bar">
       <div>Confira cuidadosamente o dia escalado, o cumprimento dos plantões é de responsabilidade do profissional.</div>
-      <div>             <span class="info-highlight">        </span>.</div>  <!--  👈 escreva aqui algo pra ficar na lateral a direita-->
-   <div>OBS. para os plantões dezembro 2025<span class="info-highlight"> RENATA plantões de 24 (noite) e 25 (dia) - LUDIMILA estará nos plantões 31 (noite) e 01 de Janeiro (dia)</span>, </div>
-  </div> <!-- 👈 FECHA info-bar AQUI -->
+
+      <div>
+        <span class="info-highlight"></span>.
+        <!-- 👈 escreva aqui algo pra ficar na lateral a direita -->
+      </div>
+
+      <div>
+        OBS. para os plantões dezembro 2025
+        <span class="info-highlight">
+          RENATA plantões de 24 (noite) e 25 (dia) - LUDIMILA estará nos plantões 31 (noite) e 01 de Janeiro (dia)
+        </span>,
+      </div>
+    </div>
+    <!-- 👈 FECHA info-bar AQUI -->
+
     <div class="table-wrapper">
       <table id="tabelaEscala">
         <thead>
@@ -907,172 +645,157 @@
         Qualquer inconsistência na escala, favor comunicar à coordenação.
       </div>
     </div>
+
   </div>
 
   <script>
-    // ---------------------------
-    // Funções utilitárias
-    // ---------------------------
+    // ============================================================
+    // ✅ TEXTOS FIXOS (dias da semana)
+    // ============================================================
+    const dayNames = ["domingo","segunda-feira","terça-feira","quarta-feira","quinta-feira","sexta-feira","sábado"];
 
-    const dayNames = [
-      "domingo",
-      "segunda-feira",
-      "terça-feira",
-      "quarta-feira",
-      "quinta-feira",
-      "sexta-feira",
-      "sábado"
-    ];
-
-    function pad2(num) {
-      return String(num).padStart(2, "0");
-    }
+    function pad2(num) { return String(num).padStart(2, "0"); }
 
     // Retorna número de dias do mês: 1..31
     function getNumeroDiasMes(ano, mes) {
-      // mes: 1-12
-      return new Date(ano, mes, 0).getDate();
+      return new Date(ano, mes, 0).getDate(); // mes: 1-12
     }
 
-    // Retorna {diaTurno, noiteTurno} para uma data, seguindo as regras combinadas
+    // ============================================================
+    // 👩‍⚕️👨‍⚕️ ESCALA — NOMES & REGRAS (EDITE AQUI)
+    // ============================================================
+
+    const PLANTONISTAS = {
+      // 👇 AQUI VOCÊ DEFINE O NOME (se um dia trocar o nome, troca aqui uma vez só porém trocará todas os plantões para esse nome)
+      paulo: "Paulo Valle",
+      gabriela: "Gabriela Canguçu",
+      renata: "Renata Bittencourt",
+      cassio: "Cassio Gomes",
+      maxwell: "Maxwell Almeida",
+      wesley: "Wesley Barroso",
+      armando: "Armando Lelis",
+      leticia: "Leticia Modesto",
+    };
+
+    // ============================================================
+    // ✅ BLOCO 1 — SEGUNDA A QUINTA (FIXO)
+    // 👇 AQUI VOCE PODE MUDAR O PLANTONISTA FIXO DESSE DIA ->
+    // ============================================================
+
+    const FIXO_SEGUNDA = { dia: PLANTONISTAS.paulo, noite: PLANTONISTAS.gabriela };
+    const FIXO_TERCA   = { dia: PLANTONISTAS.renata, noite: PLANTONISTAS.gabriela };
+    const FIXO_QUARTA  = { dia: PLANTONISTAS.gabriela, noite: PLANTONISTAS.renata };
+    const FIXO_QUINTA  = { dia: PLANTONISTAS.gabriela, noite: PLANTONISTAS.cassio };
+
+    // ============================================================
+    // ✅ BLOCO 2 — SEXTA (por ocorrência no mês)
+    // ============================================================
+
+    const SEXTA_POR_ORDEM = {
+      1: { dia: PLANTONISTAS.maxwell, noite: PLANTONISTAS.wesley },
+      2: { dia: PLANTONISTAS.renata,  noite: PLANTONISTAS.wesley },
+      3: { dia: PLANTONISTAS.maxwell, noite: PLANTONISTAS.renata },
+      4: { dia: PLANTONISTAS.renata,  noite: PLANTONISTAS.wesley },
+    };
+
+    // ============================================================
+    // ✅ BLOCO 3 — SÁBADO (por ocorrência no mês)
+    // ============================================================
+
+    function escalaSabado(idxFds) {
+      const dia = (idxFds === 4) ? PLANTONISTAS.cassio : PLANTONISTAS.wesley;
+
+      let noite = "";
+      if (idxFds === 1 || idxFds === 3) noite = PLANTONISTAS.armando;
+      else if (idxFds === 2 || idxFds === 4) noite = PLANTONISTAS.paulo;
+
+      return { dia, noite };
+    }
+
+    // ============================================================
+    // ✅ BLOCO 4 — DOMINGO (por ocorrência no mês)
+    // ============================================================
+
+    function escalaDomingo(idxFds) {
+      let dia = "";
+      if (idxFds === 1) dia = PLANTONISTAS.armando;
+      else if (idxFds === 2) dia = PLANTONISTAS.paulo;
+      else if (idxFds === 3) dia = PLANTONISTAS.cassio;
+      else if (idxFds === 4) dia = PLANTONISTAS.paulo;
+
+      let noite = "";
+      if (idxFds === 1 || idxFds === 3) noite = PLANTONISTAS.paulo;
+      else if (idxFds === 2 || idxFds === 4) noite = PLANTONISTAS.leticia;
+
+      return { dia, noite };
+    }
+
+    // ============================================================
+    // 🔎 Função central: calcula dia/noite para uma data
+    // ============================================================
     function getEscalaParaData(date) {
       const diaDoMes = date.getDate();
-      const wd = date.getDay(); // 0=Dom,1=Seg,2=Ter,3=Qua,4=Qui,5=Sex,6=Sab
-      const ocorrencia = Math.floor((diaDoMes - 1) / 7) + 1; // 1a,2a,3a,4a,5a daquele dia naquele mês
+      const wd = date.getDay();
+      const ocorrencia = Math.floor((diaDoMes - 1) / 7) + 1;
 
       let idxFds = ocorrencia;
-      // Se for sexta (5), sábado (6) ou domingo (0) e for 5ª ocorrência, repete padrão da 1ª
-      if ((wd === 5 || wd === 6 || wd === 0) && ocorrencia > 4) {
-        idxFds = 1;
-      }
+      if ((wd === 5 || wd === 6 || wd === 0) && ocorrencia > 4) idxFds = 1;
 
       let diaTurno = "";
       let noiteTurno = "";
 
       switch (wd) {
-        case 1: // Segunda-feira
-          diaTurno = "Paulo";
-          noiteTurno = "Gabriela";
+        case 1:
+          diaTurno = FIXO_SEGUNDA.dia;
+          noiteTurno = FIXO_SEGUNDA.noite;
           break;
-
-        case 2: // Terça-feira
-          diaTurno = "Renata";
-          noiteTurno = "Gabriela";
+        case 2:
+          diaTurno = FIXO_TERCA.dia;
+          noiteTurno = FIXO_TERCA.noite;
           break;
-
-        case 3: // Quarta-feira
-          diaTurno = "Gabriela";
-          noiteTurno = "Renata";
+        case 3:
+          diaTurno = FIXO_QUARTA.dia;
+          noiteTurno = FIXO_QUARTA.noite;
           break;
-
-        case 4: // Quinta-feira
-          diaTurno = "Gabriela";
-          noiteTurno = "Cassio";
+        case 4:
+          diaTurno = FIXO_QUINTA.dia;
+          noiteTurno = FIXO_QUINTA.noite;
           break;
-
-        case 5: // Sexta-feira
-          // Regras:
-          // Renata 2ª e 4ª sexta dia; 3ª sexta noite
-          // Maxwell 1ª e 3ª sexta dia
-          // Wesley toda sexta noite, exceto 3ª
-          switch (idxFds) {
-            case 1:
-              diaTurno = "Maxwell";
-              noiteTurno = "Wesley";
-              break;
-            case 2:
-              diaTurno = "Renata";
-              noiteTurno = "Wesley";
-              break;
-            case 3:
-              diaTurno = "Maxwell";
-              noiteTurno = "Renata";
-              break;
-            case 4:
-              diaTurno = "Renata";
-              noiteTurno = "Wesley";
-              break;
-            default:
-              diaTurno = "Maxwell";
-              noiteTurno = "Wesley";
-          }
+        case 5: {
+          const regra = SEXTA_POR_ORDEM[idxFds] || SEXTA_POR_ORDEM[1];
+          diaTurno = regra.dia;
+          noiteTurno = regra.noite;
           break;
-
-        case 6: // Sábado
-          // Sábado dia: Wesley todos, exceto 4º = Cassio
-          // Sábado noite:
-          //   Armando: 1º e 3º sábado
-          //   Paulo: 2º e 4º sábado
-          // 5º fim de semana repete 1º → já ajustado em idxFds
-          if (idxFds === 4) {
-            diaTurno = "Cassio";
-          } else {
-            diaTurno = "Wesley";
-          }
-
-          if (idxFds === 1 || idxFds === 3) {
-            noiteTurno = "Armando";
-          } else if (idxFds === 2 || idxFds === 4) {
-            noiteTurno = "Paulo";
-          }
+        }
+        case 6: {
+          const r = escalaSabado(idxFds);
+          diaTurno = r.dia;
+          noiteTurno = r.noite;
           break;
-
-        case 0: // Domingo
-          // Interpretação consolidada:
-          // Domingo dia:
-          //   1º: Armando
-          //   2º: Paulo
-          //   3º: Cassio
-          //   4º: Paulo
-          // Domingo noite:
-          //   Paulo 1º e 3º domingo noite
-          //   Leticia 2º e 4º domingo noite
-          // 5º fim de semana repete 1º → já ajustado em idxFds
-          switch (idxFds) {
-            case 1:
-              diaTurno = "Armando";
-              break;
-            case 2:
-              diaTurno = "Paulo";
-              break;
-            case 3:
-              diaTurno = "Cassio";
-              break;
-            case 4:
-              diaTurno = "Paulo";
-              break;
-            default:
-              diaTurno = "Armando";
-          }
-
-          if (idxFds === 1 || idxFds === 3) {
-            noiteTurno = "Paulo";
-          } else if (idxFds === 2 || idxFds === 4) {
-            noiteTurno = "Leticia";
-          }
+        }
+        case 0: {
+          const r = escalaDomingo(idxFds);
+          diaTurno = r.dia;
+          noiteTurno = r.noite;
           break;
-
+        }
         default:
-          // Não deveria cair aqui, mas garantimos algo vazio se cair
           diaTurno = "";
           noiteTurno = "";
       }
 
-      return {
-        diaTurno,
-        noiteTurno,
-        ocorrencia,
-        idxFds
-      };
+      return { diaTurno, noiteTurno, ocorrencia, idxFds };
     }
 
-    // Gera a tabela para o mês/ano escolhidos
+    // ============================================================
+    // 🧾 Render da tabela
+    // ============================================================
     function gerarEscala() {
       const mesSelect = document.getElementById("mesSelect");
-      const anoInput = document.getElementById("anoInput");
-      const tbody = document.querySelector("#tabelaEscala tbody");
+      const anoInput  = document.getElementById("anoInput");
+      const tbody     = document.querySelector("#tabelaEscala tbody");
 
-      const mes = parseInt(mesSelect.value, 10); // 1-12
+      const mes = parseInt(mesSelect.value, 10);
       const ano = parseInt(anoInput.value, 10);
 
       if (isNaN(ano) || ano < 2000 || ano > 2100) {
@@ -1085,16 +808,13 @@
 
       for (let dia = 1; dia <= numDias; dia++) {
         const data = new Date(ano, mes - 1, dia);
-        const wd = data.getDay(); // 0=Dom,1=Seg,...,6=Sab
+        const wd = data.getDay();
         const dayLabel = dayNames[wd];
+
         const { diaTurno, noiteTurno, ocorrencia } = getEscalaParaData(data);
 
         const tr = document.createElement("tr");
-
-        // Destaca final de semana
-        if (wd === 0 || wd === 6) {
-          tr.classList.add("weekend-row");
-        }
+        if (wd === 0 || wd === 6) tr.classList.add("weekend-row");
 
         const tdData = document.createElement("td");
         tdData.textContent = `${pad2(dia)}/${pad2(mes)}/${ano}`;
@@ -1124,15 +844,11 @@
       }
     }
 
-    // Função para imprimir
-    function imprimirEscala() {
-      window.print();
-    }
+    function imprimirEscala() { window.print(); }
 
-    // Configurações iniciais ao carregar a página
     (function init() {
       const hoje = new Date();
-      const mesAtual = hoje.getMonth() + 1; // 1-12
+      const mesAtual = hoje.getMonth() + 1;
       const anoAtual = hoje.getFullYear();
 
       document.getElementById("mesSelect").value = mesAtual.toString();
@@ -1141,7 +857,6 @@
       document.getElementById("btnGerar").addEventListener("click", gerarEscala);
       document.getElementById("btnImprimir").addEventListener("click", imprimirEscala);
 
-      // Gera automaticamente para o mês/ano atual ao abrir
       gerarEscala();
     })();
   </script>
